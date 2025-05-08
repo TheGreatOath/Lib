@@ -7,7 +7,7 @@ local Window = Library:CreateWindow{
     SubTitle = "by Oath",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
-    Resize = true, -- Resize this ^ Size according to a 1920x1080 screen, good for mobile users but may look weird on some devices
+    Resize = false, -- Resize this ^ Size according to a 1920x1080 screen, good for mobile users but may look weird on some devices
     MinSize = Vector2.new(470, 380),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
@@ -32,7 +32,7 @@ Library:Notify{
     Title = "Notification",
     Content = "This is a notification",
     SubContent = "SubContent", -- Optional
-    Duration = 5 -- Set to nil to make the notification not disappear
+    Duration = 2 -- Set to nil to make the notification not disappear
 }
 
 local Paragraph = Tabs.Main:CreateParagraph("Paragraph", {
