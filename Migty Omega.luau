@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGetAsync("https://github.com/TheGreatOath/Worm/releases/latest/download/Worm.luau"))()
+local Library = loadstring(game:HttpGetAsync("https://github.com/TheGreatOath/Worm/releases/download/v1.0/Worm.luau"))()
 local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/addons/SaveManager.luau"))()
 local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/addons/InterfaceManager.luau"))()
  
