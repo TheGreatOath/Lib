@@ -1,11 +1,8 @@
--- New example script written by wally
--- You can suggest changes with a pull request or something
+local worm = 'https://raw.githubusercontent.com/TheGreatOath/Worm/main/'
 
-local repo = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/'
-
-local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
+local Library = loadstring(game:HttpGet(worm .. 'Library.lua'))()
+local ThemeManager = loadstring(game:HttpGet(worm .. 'addons/ThemeManager.lua'))()
+local SaveManager = loadstring(game:HttpGet(worm .. 'addons/SaveManager.lua'))()
 local Options = Library.Options
 local Toggles = Library.Toggles
 
