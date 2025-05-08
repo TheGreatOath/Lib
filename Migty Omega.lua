@@ -1,6 +1,6 @@
-local Library = loadstring(game:HttpGetAsync("https://github.com/RegularVynixu/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
-local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau"))()
-local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
+local Library = loadstring(game:HttpGetAsync("https://github.com/TheGreatOath/Worm/releases/latest/download/Worm.luau"))()
+local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/addons/SaveManager.luau"))()
+local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TheGreatOath/Worm/refs/heads/main/addons/InterfaceManager.luau"))()
  
 local Window = Library:CreateWindow{
     Title = `Worm {Library.Version}`,
