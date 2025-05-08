@@ -1,23 +1,23 @@
 -- New example script written by wally
 -- You can suggest changes with a pull request or something
 
-local worm = 'https://raw.githubusercontent.com/TheGreatOath/Worm/main/'
+local repo = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/'
 
-local Library = loadstring(game:HttpGet(worm .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(worm .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(worm .. 'addons/SaveManager.lua'))()
+local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
+local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
+local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local Options = Library.Options
 local Toggles = Library.Toggles
 
 Library.ShowToggleFrameInKeybinds = true -- Make toggle keybinds work inside the keybinds UI (aka adds a toggle to the UI). Good for mobile users (Default value = true)
-Library.ShowCustomCursor = true -- Toggles the Worm cursor globaly (Default value = true)
+Library.ShowCustomCursor = true -- Toggles the Linoria cursor globaly (Default value = true)
 Library.NotifySide = "Left" -- Changes the side of the notifications globaly (Left, Right) (Default value = Left)
 
 local Window = Library:CreateWindow({
 	-- Set Center to true if you want the menu to appear in the center
 	-- Set AutoShow to true if you want the menu to appear when it is created
 	-- Set Resizable to true if you want to have in-game resizable Window
-	-- Set ShowCustomCursor to false if you don't want to use the Worm cursor
+	-- Set ShowCustomCursor to false if you don't want to use the Linoria cursor
 	-- NotifySide = Changes the side of the notifications (Left, Right) (Default value = Left)
 	-- Position and Size are also valid options here
 	-- but you do not need to define them unless you are changing them :)
@@ -633,7 +633,7 @@ local WatermarkConnection = game:GetService('RunService').RenderStepped:Connect(
 		FrameCounter = 0;
 	end;
 
-	Library:SetWatermark(('Worm | %s fps | %s ms'):format(
+	Library:SetWatermark(('LinoriaLib demo | %s fps | %s ms'):format(
 		math.floor(FPS),
 		math.floor(game:GetService('Stats').Network.ServerStatsItem['Data Ping']:GetValue())
 	));
@@ -676,8 +676,8 @@ SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
 -- use case for doing it this way:
 -- a script hub could have themes in a global folder
 -- and game configs in a separate folder per game
-ThemeManager:SetFolder('WormHub')
-SaveManager:SetFolder('WormHub/specific-game')
+ThemeManager:SetFolder('MyScriptHub')
+SaveManager:SetFolder('MyScriptHub/specific-game')
 SaveManager:SetSubFolder('specific-place') -- if the game has multiple places inside of it (for example: DOORS) 
 					   -- you can use this to save configs for those places separately
 					   -- The path in this script would be: MyScriptHub/specific-game/settings/specific-place
