@@ -19,7 +19,7 @@ local Window = Library:CreateWindow({
 	-- Position and Size are also valid options here
 	-- but you do not need to define them unless you are changing them :)
 
-	Title = 'Example menu',
+	Title = 'Worm',
 	Center = true,
 	AutoShow = true,
 	Resizable = true,
@@ -38,7 +38,7 @@ local Window = Library:CreateWindow({
 local Tabs = {
 	-- Creates a new tab titled Main
 	Main = Window:AddTab('Main'),
-	['UI Settings'] = Window:AddTab('UI Settings'),
+	['Settings'] = Window:AddTab('Settings'),
 }
 
 -- Groupbox and Tabbox inherit the same functions
